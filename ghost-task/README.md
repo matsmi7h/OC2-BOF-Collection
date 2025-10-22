@@ -76,7 +76,7 @@ make clean
    ghost_task remote-host add RemoteTask C:\task.exe "" SYSTEM daily 12:00
    ```
 
-### With Cobalt Strike
+### With Cobalt Strike (Not yet tested)
 
 1. Load the BOF in a Beacon:
    ```
