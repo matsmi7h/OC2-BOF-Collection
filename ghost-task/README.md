@@ -76,15 +76,6 @@ make clean
    ghost_task remote-host add RemoteTask C:\task.exe "" SYSTEM daily 12:00
    ```
 
-### With Cobalt Strike (Not yet tested)
-
-1. Load the BOF in a Beacon:
-   ```
-   inline-execute /path/to/ghost_task.x64.o localhost add MyTask C:\calc.exe "" SYSTEM daily 14:30
-   ```
-
-2. Use beacon_inline_execute for programmatic loading
-
 ## Command Syntax
 
 ```
@@ -234,8 +225,8 @@ This approach:
 
 ## Credits
 
-- Original implementation: TrustedSec CS-Remote-OPs-BOF
-- OST adaptation: Based on ClipboardHistoryThief-BOF structure
+- Original Code: https://github.com/netero1010/GhostTask
+- Original Cobalt Strike BOF implementation: TrustedSec CS-Remote-OPs-BOF
 - Registry manipulation technique: Based on research from cyber.wtf
 
 ## License
@@ -246,4 +237,3 @@ This tool is provided for authorized security testing and research purposes only
 
 - [TrustedSec CS-Remote-OPs-BOF](https://github.com/trustedsec/CS-Remote-OPs-BOF)
 - [Windows Registry Analysis - Tasks](https://cyber.wtf/2022/06/01/windows-registry-analysis-todays-episode-tasks/)
-- [Outflank Stage1](https://github.com/outflanknl/stage1)
